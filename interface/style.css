@@ -9,9 +9,10 @@ body {
     display: flex;
     justify-content: space-between;
     align-items: center;
-    padding: 15px 0px;
+    padding: 0px 0px;
     gap: 20px;
     flex-wrap: wrap;
+    background-color: rgb(240, 177, 95);
 }
 
 .icon {
@@ -32,6 +33,8 @@ li {
 a {
     color: white;
     text-decoration: none;
+    text-decoration: bold;
+    font-size: 18px;
 }
 
 .navbar {
@@ -92,5 +95,22 @@ a {
 
     .nav-menu{
         position:fixed;
+        left: -100%;
+        top: 70px;
+        gap: 0;
+        flex-direction: column;
+        background-color: rgb(224, 171, 92);
+        width: 100%;
+        text-align: center;
+        transition: 0.3s;
+    }
+
+    .nav-item{
+        margin: 16px 0;
+    }
+
+
+    .nav-menu.active{
+        left: 0;
     }
 }
