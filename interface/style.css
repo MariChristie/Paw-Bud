@@ -99,7 +99,7 @@ a {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: rgb(224, 171, 92);
+        background-color: #e0ab5c;
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -109,27 +109,77 @@ a {
         margin: 16px 0;
     }
 
-
     .nav-menu.active{
         left: 0;
     }
 }
 
+.container-menu {
+    width: 100%;
+}
+
+.container-menu svg {
+    width: 32px;
+    height: 32px;
+    stroke: black; 
+    color: black;
+    fill: none;
+    display: block;
+}
+
+.container-menu .right-arrow,
+.container-menu .left-arrow {
+    position: absolute;
+    height: 40px;
+    width: 40px;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 20;
+    background-color: white;
+    pointer-events: auto;
+}
+
+.container-menu .right-arrow {
+    right: 0;
+    background-image: linear-gradient(to left, white 30%, transparent);
+}
+
+.container-menu .left-arrow {
+    left: 0;
+    background-image: linear-gradient(to right, white 30%, transparent);
+}
+
+
+.container-menu .right-arrow.active,
+.container-menu .left-arrow.active {
+    display: flex;
+}
+
+.container-menu svg:hover {
+    background-color: blue;
+    border-radius: 50%;
+}
+
 .gallery {
     display: flex;
-    margin-top: 25px;
+    margin-top: 30px;
     gap: 20px;
     flex-wrap: wrap;
+    justify-content: center;
+    padding: 0 20px;
 }
 
 .card {
-    flex-grow: 1;
+    width: 300px;    
     flex-basis: 300px;
-    background-color: rgb(228, 163, 43);
+    background-color: #d6a853;
     padding: 3px;
     border-radius: 8px;
-    box-shadow: 0 0 10px black;
+    box-shadow: 0 0 10px rgb(255, 255, 255);
 }
+
 .card img {
     width: 100%;
     height: 210px;
@@ -137,12 +187,12 @@ a {
     border-radius: 8px 8px 0 0;
 }
 
-.card_body{
-    padding: 15px 20px 20px;
+.card_body {
+    padding: 4px 12px 8px;
 }
 
-.card_tittle{
-    height: 35px;
+.card_tittle {
+    height: 30px;
     font-size: 21px;
     font-weight: 500;
     font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
@@ -150,5 +200,6 @@ a {
 }
 
 .card_text {
+    font-size: 16px;
     color: rgb(0, 0, 0);
 }
