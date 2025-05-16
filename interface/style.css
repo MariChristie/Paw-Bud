@@ -162,6 +162,15 @@ a {
     border-radius: 50%;
 }
 
+.best_sellers {
+    margin-top: 30px;
+    padding: 0 20px;
+    font-size: 40px;
+    height: 40px;
+    display: flex;
+    background-color: white;
+}
+
 .gallery {
     display: flex;
     margin-top: 30px;
@@ -170,6 +179,8 @@ a {
     justify-content: center;
     padding: 0 20px;
 }
+
+
 
 .card {
     width: 300px;    
