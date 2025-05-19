@@ -12,7 +12,7 @@ body {
     padding: 0px 0px;
     gap: 20px;
     flex-wrap: wrap;
-    background-color: rgb(240, 177, 95);
+    background-color: #f0b15f;
 }
 
 .icon {
@@ -115,7 +115,19 @@ a {
 }
 
 .container-menu {
-    width: 100%x;
+    width: 100%;
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.container-menu img {
+    width: 100%;
+    height: auto;
+    max-height: 500px; 
+    object-fit: cover;
+    display: block;
 }
 
 .container-menu svg {
@@ -127,16 +139,13 @@ a {
     display: block;
 }
 
-.container-menu img {
-    width: 100%;
-}
-
 .container-menu .right-arrow,
 .container-menu .left-arrow {
     position: absolute;
     height: 40px;
     width: 40px;
-    top: 0;
+    top: 50%;
+    transform: translateY(-50%);
     display: flex;
     align-items: center;
     justify-content: center;
@@ -166,14 +175,7 @@ a {
     border-radius: 50%;
 }
 
-.best_sellers {
-    margin-top: 30px;
-    padding: 0 20px;
-    font-size: 40px;
-    height: 40px;
-    display: flex;
-    background-color: white;
-}
+
 
 .gallery {
     display: flex;
