@@ -20,6 +20,91 @@ body {
     height: auto;
 }
 
+.slider {
+    width: 100vw;
+    height: 80vh; 
+    position: relative;
+    overflow: hidden;
+}
+
+.slides {
+    width: 400%;
+    height: 100%; 
+    display: flex;
+}
+
+.slides input {
+    display: none;
+}
+
+.slide{
+    width: 25%;
+    position: relative;
+}
+
+.slide img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    display:flex
+}
+
+.manual-navigation {
+    position: absolute;
+    width: 100%;
+    bottom: 20px;
+    display: flex;
+    justify-content: center;
+    z-index: 2;
+}
+
+
+.manual-btn{
+    border: 2px solid white;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.manual.btn:not(:last-child){
+    margin-right: 40px;
+}
+
+.manual-btn:hover{
+    background: white;
+}
+
+#radio1:checked ~ .first{
+    margin-left: 0;
+}
+
+#radio2:checked ~ .first{
+    margin-left: -25%;
+}
+
+.navigation-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div.not(:last-child){
+    
+}
+
+
+
 *{
     padding: 0;
     margin: 0;
@@ -113,69 +198,6 @@ a {
         left: 0;
     }
 }
-
-.container-menu {
-    width: 100%;
-    position: relative;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-}
-
-.container-menu img {
-    width: 100%;
-    height: auto;
-    max-height: 500px; 
-    object-fit: cover;
-    display: block;
-}
-
-.container-menu svg {
-    width: 32px;
-    height: 32px;
-    stroke: black; 
-    color: black;
-    fill: none;
-    display: block;
-}
-
-.container-menu .right-arrow,
-.container-menu .left-arrow {
-    position: absolute;
-    height: 40px;
-    width: 40px;
-    top: 50%;
-    transform: translateY(-50%);
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    z-index: 20;
-    background-color: white;
-    pointer-events: auto;
-}
-
-.container-menu .right-arrow {
-    right: 0;
-    background-image: linear-gradient(to left, white 30%, transparent);
-}
-
-.container-menu .left-arrow {
-    left: 0;
-    background-image: linear-gradient(to right, white 30%, transparent);
-}
-
-
-.container-menu .right-arrow.active,
-.container-menu .left-arrow.active {
-    display: flex;
-}
-
-.container-menu svg:hover {
-    background-color: blue;
-    border-radius: 50%;
-}
-
-
 
 .gallery {
     display: flex;
