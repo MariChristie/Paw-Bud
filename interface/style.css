@@ -413,7 +413,6 @@ a {
 }
 
 .card3 {
-    height: 500px;
     flex-basis: 350px;
     background-color: #813b0cf1;
     padding: 3px;
@@ -441,7 +440,7 @@ a {
 }
 
 .card_text3 {
-    font-size: 16px;
+    font-size: 20px;
     color: rgb(0, 0, 0);
 }
 
