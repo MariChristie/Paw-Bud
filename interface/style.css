@@ -1,8 +1,17 @@
 body {
-    overflow-x:hidden;
+    overflow-x: hidden;
     margin: 0;
     font-family: sans-serif;
-    background-color:burlywood;
+    background-color: burlywood;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.main-content {
+    flex: 1;
+    width: 100%;
 }
 
 .header {
@@ -12,7 +21,7 @@ body {
     padding: 0px 0px;
     gap: 20px;
     flex-wrap: wrap;
-    background-color: #f0b15f;
+    background-color: #4e310afa;
 }
 
 .icon {
@@ -26,7 +35,7 @@ body {
     height: auto;
     position: relative;
     overflow: hidden;
-    background-color: #d6a853;
+    background-color: #000000;
 }
 
 .slides {
@@ -203,7 +212,7 @@ a {
         top: 70px;
         gap: 0;
         flex-direction: column;
-        background-color: #e0ab5c;
+        background-color: #f0b15f;
         width: 100%;
         text-align: center;
         transition: 0.3s;
@@ -240,7 +249,7 @@ a {
 .card {
     width: 300px;    
     flex-basis: 300px;
-    background-color: #d6a853;
+    background-color: #7e4c0c5b;
     padding: 3px;
     border-radius: 8px;
     box-shadow: 0 0 10px rgb(255, 255, 255);
@@ -285,9 +294,11 @@ a {
 }
  
 .division {
+    display: block;
+    margin: 40px 0;
     margin-top: 40px;
     max-height: 3000px;
-    width: auto;
+    width: 100%;
     max-width: auto;
     height: auto;
     position: relative;
@@ -305,9 +316,10 @@ a {
     margin: auto;
     justify-content: center; 
     flex-wrap: wrap; 
-    margin-top: 40px;
+    background-color: #f0b15f;
     max-width: 1600px;
-    padding: 0 20px;
+    padding: 60px 20px;
+
 }
 
 .card_text2 {
@@ -369,6 +381,7 @@ a {
 
 .secao-profission {
     margin-top: 60px;
+    margin-bottom: 0;
     background-color: #f0b15f;
     padding: 60px 20px;
     text-align: center;
@@ -441,7 +454,7 @@ a {
 
 .card_text3 {
     font-size: 20px;
-    color: rgb(0, 0, 0);
+    color: rgb(252, 225, 176);
 }
 
 .card_text3 a {
@@ -449,6 +462,90 @@ a {
   text-decoration: underline;
   font-weight: bold;
 }
+
+.end {
+    margin-top: 60px;
+    margin-bottom: 0;
+    background-color:burlywood;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.end_title {
+    font-size: 30px;
+    color: rgb(92, 57, 18);
+}
+
+
+.end-titulo {
+    font-size: 32px;
+    color: #fff;
+    margin-bottom: 40px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.end-titulo2 {
+    font-size: 32px;
+    color: #fff;
+    margin-top: 15px;
+    margin-bottom: 30px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+.end-titulo3 {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 100px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.reference {
+    display: flex;
+    margin-top: 40px;
+    gap: 60px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    max-width: 1200px; 
+    margin: 40px auto 0 auto;
+    justify-content: center;
+    padding: 0 20px;
+}
+
+.end-card {
+    flex-basis: 350px;
+    background-color: #813b0cf1;
+    padding: 3px;
+    border: 6px solid #fff;
+}
+
+.end-card img {
+    width: 200px;        
+    height: 200px;       
+    object-fit: cover; 
+    border-radius: 8px;
+}
+
+.end-reference2{
+    padding: 4px 12px 8px;
+}
+
+.end-text3 {
+    font-size: 20px;
+    color: rgb(255, 255, 255);
+}
+
+.end-text3 a {
+  color: rgb(131, 225, 253);
+  text-decoration: underline;
+  font-weight: bold;
+}
+
+
+
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
@@ -459,20 +556,23 @@ a {
 }
 
 footer {
-    background-color: rgb(240, 177, 95);
+    background-color: #f0b15f;
+    width: 100%;
     padding: 30px 0;
-    margin-top: 60px
+    margin-top: auto; 
 }
 
 .container-footer {
     max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
     padding: 0 4%;
-    margin: auto;
 }
 
-.raw-footer {
+.row-footer {
     display: flex;
     flex-wrap: wrap;
+    width: 100%;
 }
 
 .footer-col {
@@ -522,7 +622,7 @@ footer {
     justify-content: center;
     height: 40px;
     width: 40px;
-    margin: 0 10px 10ox 0;
+    margin: 0 10px 10px 0;
     text-decoration: none;
     border-radius: 50%;
     color: white;
