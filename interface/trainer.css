@@ -1,0 +1,314 @@
+body {
+    overflow-x: hidden;
+    margin: 0;
+    font-family: sans-serif;
+    background-color: #f0ca75;
+    display: flex;
+    flex-direction: column;
+    min-height: 100vh;
+}
+
+
+.main-content {
+    flex: 1;
+    width: 100%;
+}
+
+.header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0px 0px;
+    gap: 20px;
+    flex-wrap: wrap;
+    background-color: #4e310afa;
+}
+
+.icon {
+    width: 200px;
+    height: auto;
+}
+
+.navigation-auto div{
+    border: 2px solid blue;
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    transition: 1s;
+}
+
+.navigation-auto{
+    position: absolute;
+    width: 800px;
+    margin-top: 360px;
+    display: flex;
+    justify-content: center;
+}
+
+.navigation-auto div.not(:last-child){
+    margin-right: 40px;
+}
+
+#radio1:checked ~ .navigation-auto .auto-btn1{
+    background-color: aliceblue;
+}
+
+#radio2::checkmark ~ .navigation-auto .auto-btn2{
+    background-color: hotpink;
+}
+
+
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+li {
+    list-style: none;
+}
+
+a {
+    color: white;
+    text-decoration: none;
+    text-decoration: bold;
+    font-size: 18px;
+}
+
+.navbar {
+    min-height: 70px;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 0 24px;
+}
+
+.nav-menu {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 60px
+}
+
+.nav-branding {
+    font-size: 2rem;
+}
+
+.nav-link {
+    transition: 0.7s ease;
+}
+
+.nav-link:hover {
+    color: dodgerblue;
+}
+
+
+
+.top {
+    max-width: 800px;
+    margin: 0 auto;
+    padding: 20px;
+    text-align: center; 
+}
+
+.top-title {
+    height: 30px;
+    font-size: 21px;
+    font-weight: 500;
+    font-family: 'Alfa Slab One', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.top-text {
+    font-family: 'Alfa Slab One', Arial, sans-serif;
+    font-size: 16px;
+    color: rgb(0, 0, 0);
+    margin-top: 20px;
+}
+
+.introducao {
+    display: flex;          
+    flex-direction: row;    
+    align-items: center;    
+    justify-content: space-between; 
+    gap: 40px;       
+    margin: 40px 60px;    
+    max-width: 1600px;
+    padding: 0 20px;
+}
+
+.card_title {
+    font-size: 40px;
+    max-width: 1600px;
+    font-family: 'Roboto', sans-serif;
+    color: rgb(228, 228, 228);
+    margin-bottom: 20px;   
+}
+
+.card_text {
+    font-size: 30px; 
+    font-family: 'Roboto', sans-serif;
+    color: rgb(255, 255, 255);
+    line-height: 1.5;
+    max-width: 600px; 
+}
+
+.introducao-img {
+    flex: 2;
+    max-width: 1600px; 
+    width: 200px;          
+    height: auto;         
+    order: 2;              
+    border-radius: 8px;
+}
+
+@media (min-width: 1600px) {
+  .introducao, .sobre, .detalhe {
+    max-width: 1400px;
+    gap: 80px;
+  }
+
+  .card_text, .card_text2 {
+    font-size: 28px;
+  }
+
+  .card_title, .card_title2 {
+    font-size: 45px;
+  }
+
+  .sobre-img, .introducao-img {
+    width: 700px;
+  }
+}
+
+
+footer {
+    background-color: #4e310afa;
+    width: 100%;
+    padding: 30px 0;
+    margin-top: auto; 
+}
+
+.container-footer {
+    max-width: 1400px;
+    width: 100%;
+    margin: 0 auto;
+    padding: 0 4%;
+}
+
+.row-footer {
+    display: flex;
+    flex-wrap: wrap;
+    width: 100%;
+}
+
+.footer-col {
+    width: 25%;
+    padding: 0 15px;
+}
+
+.footer-col h4 {
+    font-size: 22px;
+    color: white;
+    margin-bottom: 20px;
+    font-weight: 500;
+    position: relative;
+    text-transform: uppercase;
+}
+
+.footer-col ul {
+    list-style: none;
+}
+
+.footer-col ul li {
+    margin: 10px 0;
+}
+
+.footer-col ul li a {
+    font-size: 16px;
+    text-transform: capitalize;
+    color: white;
+    text-decoration: none;
+    font-weight: 300;
+    display: block;
+    transition: all 0.3s ease;
+}
+
+.footer-col ul li a:hover {
+    color: white;
+    padding-left: 10px;
+}
+
+.footer-col .medias-sociais {
+    margin-top: 30px;
+}
+
+.footer-col .medias-sociais a{
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    height: 40px;
+    width: 40px;
+    margin: 0 10px 10px 0;
+    text-decoration: none;
+    border-radius: 50%;
+    color: white;
+    border: 1px solid white;
+    transition: all 0.5s ease;
+}
+
+.footer-col .medias-sociais a i{
+    font-size: 20px;
+}
+
+.footer-col .medias-sociais a:hover {
+    color: blue;
+    background-color: aqua;
+}
+
+.footer-col .form-sub input {
+    width: 100%;
+    padding: 10px;
+    font-size: 15px;
+    outline: none;
+    border: 1px solid white;
+    color: white;
+    background-color: brown;
+}
+
+.footer-col .form-sub input::placeholder {
+    color:beige;
+}
+
+.footer-col .form-sub button {
+    width: 100%;
+    margin-top: 10px;
+    padding: 10px;
+    font-size: 17px;
+    outline: none;
+    border: none;
+    cursor: pointer;
+    color: black;
+    border-radius: bold;
+    background-color: white;
+}
+
+@media(max-width:800px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px;
+    }
+}
+
+@media (max-width: 800px) {
+    .footer-col {
+        width: 50%;
+        margin-bottom: 30px
+    }
+}
+
+@media (max-width: 600px) {
+    .footer-col {
+        width: 100%;
+    }
+}
