@@ -2,7 +2,7 @@ body {
     overflow-x: hidden;
     margin: 0;
     font-family: sans-serif;
-    background-color: burlywood;
+    background-color: white;
     display: flex;
     flex-direction: column;
     min-height: 100vh;
@@ -232,7 +232,7 @@ a {
     font-size: 40px;
     text-align: center;
     margin-top: 10px;
-    color: white;
+    color: rgb(0, 0, 0);
 }
 
 
@@ -249,10 +249,10 @@ a {
 .card {
     width: 300px;    
     flex-basis: 300px;
-    background-color: #7e4c0c5b;
+    background-color: #4e310afa;
     padding: 3px;
     border-radius: 8px;
-    box-shadow: 0 0 10px rgb(255, 255, 255);
+    box-shadow: 0 0 10px  #4e310afa;
 }
 
 .card img {
@@ -276,11 +276,11 @@ a {
 
 .card_text {
     font-size: 16px;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .card_text a {
-  color: rgb(255, 255, 255);
+  color: rgb(105, 171, 247);
   text-decoration: underline;
   font-weight: bold;
 }
@@ -307,19 +307,21 @@ a {
 }
 
 
+.faixa-bg {
+    background-color: #4e310afa;
+    width: 100%;
+}
+
 .sobre {
     display: flex;          
     flex-direction: row;    
     align-items: flex-start;   
-    justify-content: space-between; 
-    gap: 40px;       
-    margin: auto;
     justify-content: center; 
     flex-wrap: wrap; 
-    background-color: #f0b15f;
+    gap: 40px;       
     max-width: 1600px;
+    margin: auto;
     padding: 60px 20px;
-
 }
 
 .card_text2 {
@@ -327,7 +329,7 @@ a {
     font-size: 20px;
     gap: 10px;
     font-family:'Roboto', sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
 }
 
 .card_text2 i {
@@ -349,7 +351,7 @@ a {
     margin-top: 40px;
     font-size: 25px;
     font-family: 'Roboto', sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     line-height: 1.5;
 }
 
@@ -382,7 +384,7 @@ a {
 .secao-profission {
     margin-top: 60px;
     margin-bottom: 0;
-    background-color: #f0b15f;
+    background-color:  #4e310afa;
     padding: 60px 20px;
     text-align: center;
 }
@@ -429,7 +431,7 @@ a {
     flex-basis: 350px;
     background-color: #813b0cf1;
     padding: 3px;
-    border: 6px solid #fff;
+    border: 6px solid #000000;
 }
 
 .card3 img {
@@ -556,7 +558,7 @@ a {
 }
 
 footer {
-    background-color: #f0b15f;
+    background-color: #4e310afa;
     width: 100%;
     padding: 30px 0;
     margin-top: auto; 
