@@ -504,9 +504,75 @@ a {
     background-color: #4e310afa;
 }
 
+.card-list .card-item {
+    list-style: none;
+
+}
+
+.card-list .card-item .card-link{
+    width: 400px;
+    display: block;
+    background: rgb(92, 25, 25);
+    padding: 18px;
+    border-radius: 12px;
+    text-decoration: none;
+    border: 2px solid transparent;
+    box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
+    transition: 0.2 ease;
+}
+
+.card-list .card-item .card-link:hover {
+    border-color: #5372F0;
+}
 
 
+.card-item .card-link .card-image{
+    width: 100%;
+    aspect-ratio: 16 / 9;
+    object-fit: cover;
+    border-radius: 10px;
 
+}
+
+
+.card-list .card-link .badge {
+    color: blue;
+    padding: 8px 16px;
+    font-size: 0.95rem;
+    font-weight: 500;
+    width: fit-content;
+    margin: 16px 0 18px;
+    background: #DDE4FF;
+    border-radius: 50px;
+
+}
+
+.card-item .card-link .card-roles-title {
+    font-size: 1.19rem;
+    color: black;
+    font-weight: 600;
+}
+
+.card-item .card-link .card-button-roles {
+    height: 35px;
+    width: 35px;
+    color: #5372F0;
+    border-radius: 50px;
+    margin: 30px 0 5px;
+    background: none;
+    cursor: pointer;
+    border: 2px solid #5372F0;
+    transform: rotate(-45deg);
+    transition: 0.4 ease;
+}
+
+.card-link:hover .card-button-roles {
+    color: white;
+    background: #5372F0;
+}
+
+
+/*----     Footer     ----*/
 
 footer {
     background-color: #4e310afa;
