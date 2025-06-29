@@ -547,6 +547,32 @@ a {
 
 }
 
+.card-list .card-link .badge.guard {
+    color: rgb(0, 0, 0);
+    background: #F7DFF5;
+
+}
+.card-list .card-link .badge.guide {
+    color: rgb(0, 0, 0);
+    background: #F7DFF5;
+
+}
+.card-list .card-link .badge.house {
+    color: rgb(0, 0, 0);
+    background: #F7DFF5;
+
+}
+.card-list .card-link .badge.herding {
+    color: rgb(0, 0, 0);
+    background: #F7DFF5;
+
+}
+
+
+
+
+
+
 .card-item .card-link .card-roles-title {
     font-size: 1.19rem;
     color: black;
