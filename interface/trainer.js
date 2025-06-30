@@ -1,6 +1,6 @@
 new Swiper('.card-wrapper', {
-  loop: true,
-  spaceBetween: 30,
+    loop: true,
+    spaceBetween: 30,
 
   pagination: {
     el: '.swiper-pagination',
@@ -15,13 +15,13 @@ new Swiper('.card-wrapper', {
 
   breakpoints: {
     0: {
-      slidesPerView: 1
+        slidesPerView: 1
     },
     768: {
-      sliderPerView: 2
+        slidesPerView: 2
     },
     1024: {
-      sliderPerView: 1
+        slidesPerView: 3
     },
   }
 });

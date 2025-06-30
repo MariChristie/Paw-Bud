@@ -495,144 +495,138 @@ a {
     font-size: 60px;
     font-weight: 500;
     font-family: 'Playfair_Display', Arial, sans-serif;
-    color: rgb(72, 149, 212);
-    text-decoration: underline;
-    margin-bottom: 80px;
-    margin: 0 auto;
+    color: rgb(255, 255, 255);
+    margin-top: 150px;
     padding: 20px;
     text-align: center; 
     background-color: #4e310afa;
 }
 
+@import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
+
 .card-wrapper {
     max-width: 1100px;
-    margin: 0 60px 35px;
+    margin: 0 60px 36px;
     padding: 20px 10px;
     overflow: hidden;
 }
 
 .card-list .card-item {
     list-style: none;
-
 }
 
-.card-list .card-item .card-link{
+.card-list .card-item .card-link {
     user-select: none;
-    width: 400px;
     display: block;
-    background: rgb(92, 25, 25);
+    background: #fff;
     padding: 18px;
     border-radius: 12px;
     text-decoration: none;
-    border: 2px solid transparent;
     box-shadow: 0 10px 10px rgba(0, 0, 0, 0.05);
-    transition: 0.2 ease;
+    border: 2px solid transparent;
+    transition: 0.2s ease;
 }
 
 .card-list .card-item .card-link:active {
     cursor: grabbing;
-
 }
+
+
 
 .card-list .card-item .card-link:hover {
     border-color: #5372F0;
 }
 
 
-.card-item .card-link .card-image{
+.card-list .card-link .card-image{
     width: 100%;
-    aspect-ratio: 16 / 9;
+    aspect-ratio: 16 /9;
     object-fit: cover;
     border-radius: 10px;
-
 }
 
-
 .card-list .card-link .badge {
-    color: blue;
+    color: #5372F0;
     padding: 8px 16px;
     font-size: 0.95rem;
     font-weight: 500;
-    width: fit-content;
     margin: 16px 0 18px;
-    background: #DDE4FF;
+    width: fit-content;
     border-radius: 50px;
-
+    background: #DDE4FF;
 }
 
-.card-list .card-link .badge.guard {
-    color: rgb(0, 0, 0);
+.card-list .card-link .badge.slider1{
+    color: #B22485;
     background: #F7DFF5;
-
 }
-.card-list .card-link .badge.guide {
-    color: rgb(0, 0, 0);
+
+.card-list .card-link .badge.slider2{
+    color: #B25A2B;
     background: #F7DFF5;
-
 }
-.card-list .card-link .badge.house {
-    color: rgb(0, 0, 0);
+
+.card-list .card-link .badge.slider3{
+    color: #205c20; 
     background: #F7DFF5;
-
 }
-.card-list .card-link .badge.herding {
-    color: rgb(0, 0, 0);
+
+.card-list .card-link .badge.slider4{
+    color: #856404;
     background: #F7DFF5;
-
 }
 
 
-.card-item .card-link .card-roles-title {
+.card-list .card-link .card-title {
     font-size: 1.19rem;
-    color: black;
+    color: #000;
     font-weight: 600;
 }
 
-.card-item .card-link .card-button-roles {
+.card-list .card-link .card-button {
     height: 35px;
     width: 35px;
     color: #5372F0;
-    border-radius: 50px;
+    border-radius: 50%;
     margin: 30px 0 5px;
     background: none;
     cursor: pointer;
     border: 2px solid #5372F0;
     transform: rotate(-45deg);
-    transition: 0.4 ease;
+    transition: 0.4s ease;
 }
 
-.card-link:hover .card-button-roles {
-    color: white;
+.card-list .card-link:hover .card-button {
+    color: #FFF;
     background: #5372F0;
+
 }
 
-.carrd-wrapper .swiper-pagination-bullet {
+.card-wrapper .swiper-pagination-bullet {
     height: 13px;
     width: 13px;
     opacity: 0.5;
     background: #5372F0;
 }
 
-.carrd-wrapper .swiper-pagination-bullet-active {
+.card-wrapper .swiper-pagination-bullet-active {
     opacity: 1;
 }
 
-.card-wrapper .swiper-slide-button {
+.card-wrapper .swipe-slide-button {
     color: #5372F0;
-    margin-top: -35px;
+    margin-top: -35px
 }
 
-
-@media screen and (max-width: 768px) {
+@media screen and (max-width: 768) {
     .card-wrapper {
         margin: 0 10px 25px;
     }
-
-    .card-wrapper .swiper-slide-button {
+    
+    .card--wrapper .swiper-slide-button {
         display: none;
     }
 }
-
 
 
 /*----     Footer     ----*/
