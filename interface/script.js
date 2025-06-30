@@ -17,6 +17,7 @@ function netImage(){
     count++;
     if(count>4){
         count = 1;
-}
+}}
 
-document.getElementById("radio"+count).checked = true;
+
+document.getElementById("radio"+count).checked = true; 
