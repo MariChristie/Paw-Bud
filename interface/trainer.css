@@ -36,7 +36,7 @@ body {
     transition: 1s;
 }
 
-.navigation-auto{
+.navigation-auto {
     position: absolute;
     width: 800px;
     margin-top: 360px;
@@ -44,7 +44,7 @@ body {
     justify-content: center;
 }
 
-.navigation-auto div.not(:last-child){
+.navigation-auto div:not(:last-child) {
     margin-right: 40px;
 }
 
@@ -104,7 +104,7 @@ a {
 
 
 .top {
-    max-width: 800px;
+    max-width: 1200px;
     margin: 0 auto;
     padding: 20px;
     text-align: center; 
@@ -138,14 +138,14 @@ a {
 }
 
 .introducao-img {
-    width: 400px;
+    width: 1200px;
     height: auto;
     border-radius: 8px;
     flex-shrink: 0;
 }
 
 .introducao-texto {
-    max-width: 600px;
+    max-width: 1200px;
 }
 
 
@@ -269,7 +269,7 @@ a {
 .programs {
     margin-top: 60px;
     margin-bottom: 0;
-    background-color: #835213;
+    background-color: #4e310afa;
     padding: 60px 20px;
     text-align: center;
 }
@@ -500,7 +500,7 @@ a {
     margin-bottom: 50px;
     padding: 20px;
     text-align: center; 
-    background-color: #f0ca75;
+    background-color: #4e310afa;
 }
 
 @import url('https://fonts.googleapis.com/css2?family=Inter:opsz,wght@14..32,100..900&display=swap');
@@ -626,6 +626,134 @@ a {
         display: none;
     }
 }
+
+.role-profission {
+    margin-top: 60px;
+    margin-bottom: 0;
+    padding: 60px 20px;
+    text-align: center;
+}
+
+.role-titulo {
+    font-size: 60px;
+    font-weight: 500;
+    font-family: 'Playfair_Display', Arial, sans-serif;
+    color: rgb(0, 0, 0);
+    margin-top: 150px;
+    margin-bottom: 50px;
+    padding: 20px;
+    text-align: center; 
+    background-color: #f0ca75;
+}
+
+
+.role-titulo3 {
+  font-size: 16px;
+  color: #fff;
+  margin: 0;
+}
+
+
+.role-titulo2 {
+  font-size: 24px;
+  color: #fff;
+  font-weight: bold;
+  margin: 0;
+  margin-bottom: 5px;
+}
+
+.role-titulo3 {
+    font-size: 20px;
+    color: #fff;
+    margin-right: 100px;
+    margin-bottom: 60px;
+    font-weight: bold;
+    font-family: 'Oswald', sans-serif;
+}
+
+
+.profission {
+    display: flex;
+    margin-top: 40px;
+    gap: 80px;
+    flex-wrap: wrap;
+    align-items: stretch;
+    max-width: 900px; 
+    text-align: left;
+    margin-left: 300px;
+    padding-left: 4px;
+    justify-content: center;
+    padding: 0 0px;
+}
+
+.card3 {
+    display: flex;
+    flex-direction: row;
+    background-color: #813b0cf1;
+    border-radius: 12px;
+    padding: 20px;
+    flex-basis: 100%;
+    max-width: 700px;
+    height: auto;
+    align-items: center;
+    gap: 20px;
+
+}
+
+.card3 img {
+  width: 220px;
+  height: 220px;
+  object-fit: cover;
+  border-radius: 8px;
+}
+
+.conteudo-card3 {
+    flex: 1;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between; 
+}
+
+.bloco-info-superior {
+  display: flex;
+  flex-direction: column;
+  gap: 4px;
+  margin-bottom: 12px;
+  align-items: flex-start;
+}
+
+
+.card_title3 {
+    height: px;
+    font-size: 21px;
+    font-weight: 500;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+    color: rgb(255, 255, 255);
+}
+
+.price_title {
+  font-size: 18px;
+  color: #fff;
+  margin: 0;
+}
+
+.card_text3 {
+    font-size: 18px;
+    color: rgb(252, 225, 176);
+    line-height: 1.4;
+    margin-bottom: 4px;
+}
+
+.card_text3 a {
+    color: white;
+    text-decoration: underline;
+    font-weight: bold;
+    margin-top: 6px;
+}
+
+
+
+
 
 
 /*----     Footer     ----*/
