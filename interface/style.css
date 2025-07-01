@@ -21,7 +21,7 @@ body {
     padding: 0px 0px;
     gap: 20px;
     flex-wrap: wrap;
-    background-color: #4e310afa;
+    background-color: #5A422A;
 }
 
 .icon {
@@ -232,58 +232,121 @@ a {
     font-size: 40px;
     text-align: center;
     margin-top: 10px;
-    color: rgb(0, 0, 0);
+    color: 	#3E2F1C;
 }
 
 
 .gallery {
-    display: flex;
-    margin-top: 30px;
-    gap: 20px;
-    flex-wrap: wrap;
-    justify-content: center;
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(280px, 1fr));
+    gap: 30px;
+    margin: 40px auto;
     padding: 0 20px;
+    max-width: 1200px;
 }
 
 
 .card {
-    width: 300px;    
-    flex-basis: 300px;
-    background-color: #4e310afa;
-    padding: 3px;
-    border-radius: 8px;
-    box-shadow: 0 0 10px  #4e310afa;
+    background: #6B4E2E;
+    border-radius: 12px;
+    overflow: hidden;
+    box-shadow: 0 5px 15px rgba(94, 66, 42, 0.1);
+    transition: all 0.3s ease;
+    border: 1px solid #EEE0C9;
 }
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 25px rgba(94, 66, 42, 0.15);
+}
+
+
 
 .card img {
     width: 100%;
-    height: 210px;
+    height: 220px;
     object-fit: cover;
-    border-radius: 8px 8px 0 0;
+    transition: transform 0.5s ease;
+    border-radius: 12px 12px 0 0;
+}
+
+.card:hover img {
+    transform: scale(1.03);
 }
 
 .card_body {
-    padding: 4px 12px 8px;
+    padding: 20px;
 }
 
-.card_tittle {
-    height: 30px;
-    font-size: 21px;
-    font-weight: 500;
-    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
-    color: rgb(255, 255, 255);
+.card_title {
+    font-size: 1.3rem;
+    color: #EEE0C9;
+    margin-bottom: 10px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 8px;
+}
+
+.card_title::after {
+    content: '';
+    position: absolute;
+    bottom: 0;
+    left: 0;
+    width: 40px;
+    height: 2px;
+    background: #D4A762;
 }
 
 .card_text {
-    font-size: 16px;
-    color: rgb(255, 255, 255);
+    color: #EEE0C9;
+    line-height: 1.6;
+    margin-top: 15px;
+    font-size: 0.95rem;
 }
 
+
 .card_text a {
-  color: rgb(105, 171, 247);
-  text-decoration: underline;
-  font-weight: bold;
+    color: #f0d5bb;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+    position: relative;
 }
+
+.card_text a::after {
+    content: '→';
+    margin-left: 5px;
+    transition: margin-left 0.3s ease;
+}
+
+.card_text a:hover {
+    color: #000000;
+}
+
+.card_text a:hover::after {
+    margin-left: 8px;
+}
+
+
+@media (max-width: 768px) {
+    .gallery {
+        grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+        gap: 20px;
+    }
+    
+    .card img {
+        height: 180px;
+    }
+}
+
+@media (max-width: 480px) {
+    .gallery {
+        grid-template-columns: 1fr;
+    }
+}
+
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
 *{
@@ -292,11 +355,13 @@ a {
     padding: 0;
     box-sizing: border-box;
 }
- 
+
+
 .division {
     display: block;
     margin: 40px 0;
-    margin-top: 40px;
+    margin-top: 100px;
+    margin-bottom: 100px;
     max-height: 3000px;
     width: 100%;
     max-width: auto;
@@ -308,7 +373,7 @@ a {
 
 
 .faixa-bg {
-    background-color: #4e310afa;
+    background-color: #3E2F1C;
     width: 100%;
 }
 
@@ -384,7 +449,7 @@ a {
 .secao-profission {
     margin-top: 60px;
     margin-bottom: 0;
-    background-color:  #4e310afa;
+    background-color:  #3E2F1C;
     padding: 60px 20px;
     text-align: center;
 }
@@ -429,9 +494,14 @@ a {
 
 .card3 {
     flex-basis: 350px;
-    background-color: #813b0cf1;
+    background-color: #5A422A;
     padding: 3px;
-    border: 6px solid #000000;
+    border: 0px solid #a1601e;
+    transition: all 0.3s ease;
+}
+
+.card3:hover {
+    transform: translateY(-5px);
 }
 
 .card3 img {
@@ -440,6 +510,11 @@ a {
     object-fit: cover; 
     border-radius: 8px;
     margin-top: 15px;
+    transition: transform 0.5s ease;
+}
+
+.card3:hover img {
+    transform: scale(1.03); 
 }
 
 .card_profission{
@@ -468,7 +543,6 @@ a {
 .end {
     margin-top: 60px;
     margin-bottom: 0;
-    background-color:burlywood;
     padding: 60px 20px;
     text-align: center;
 }
@@ -478,37 +552,19 @@ a {
     color: rgb(92, 57, 18);
 }
 
-
-.end-titulo {
-    font-size: 32px;
-    color: #fff;
-    margin-bottom: 40px;
-    font-weight: bold;
-    font-family: 'Oswald', sans-serif;
-}
-
 .end-titulo2 {
-    font-size: 32px;
-    color: #fff;
-    margin-top: 15px;
-    margin-bottom: 30px;
-    font-weight: bold;
-    font-family: 'Oswald', sans-serif;
+    font-size: 1.6rem;
+    color: #EEE0C9;
+    margin-bottom: 10px;
+    font-weight: 700;
+    position: relative;
+    padding-bottom: 8px;
 }
-
-.end-titulo3 {
-    font-size: 20px;
-    color: #fff;
-    margin-right: 100px;
-    font-weight: bold;
-    font-family: 'Oswald', sans-serif;
-}
-
 
 .reference {
     display: flex;
     margin-top: 40px;
-    gap: 60px;
+    gap: 40px;
     flex-wrap: wrap;
     align-items: stretch;
     max-width: 1200px; 
@@ -519,34 +575,68 @@ a {
 
 .end-card {
     flex-basis: 350px;
-    background-color: #813b0cf1;
-    padding: 3px;
-    border: 6px solid #fff;
+    background-color: #3E2F1C;      
+    padding: 30px;
+    border: 1px solid rgba(212, 167, 98, 0.2);
+    box-shadow: 0 8px 32px rgba(0, 0, 0, 0.1);
+    border-radius: 12px;
+    backdrop-filter: blur(10px);
+    transition: all 0.3s ease;
 }
+
+.end-card:hover {
+     transform: translateY(-5px);
+}
+
 
 .end-card img {
     width: 200px;        
     height: 200px;       
     object-fit: cover; 
     border-radius: 8px;
+    transition: transform 0.5s ease;
 }
+
+.end-card:hover img {
+    transform: scale(1.03);
+}
+
 
 .end-reference2{
     padding: 4px 12px 8px;
 }
 
 .end-text3 {
-    font-size: 20px;
-    color: rgb(255, 255, 255);
+    color: #EEE0C9;
+    line-height: 1.6;
+    margin-top: 15px;
+    font-size: 1,5rem;
 }
+
 
 .end-text3 a {
-  color: rgb(131, 225, 253);
-  text-decoration: underline;
-  font-weight: bold;
+    color: #f0d5bb;
+    font-weight: 600;
+    text-decoration: none;
+    display: inline-block;
+    margin-top: 8px;
+    transition: all 0.3s ease;
+    position: relative;
 }
 
+.end-text3 a::after {
+    content: '→';
+    margin-left: 5px;
+    transition: margin-left 0.3s ease;
+}
 
+.end-text3 a:hover {
+    color: #000000;
+}
+
+.end-text3 a:hover::after {
+    margin-left: 8px;
+}
 
 
 @import url('https://fonts.googleapis.com/css2?family=Oswald:wght@200..700&family=Roboto:ital,wght@0,100..900;1,100..900&display=swap');
@@ -558,7 +648,7 @@ a {
 }
 
 footer {
-    background-color: #4e310afa;
+    background-color: #5A422A;
     width: 100%;
     padding: 30px 0;
     margin-top: auto; 

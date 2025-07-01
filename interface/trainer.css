@@ -20,7 +20,7 @@ body {
     padding: 0px 0px;
     gap: 20px;
     flex-wrap: wrap;
-    background-color: #4e310afa;
+    background-color: #5A422A;
 }
 
 .icon {
@@ -132,16 +132,23 @@ a {
     justify-content: center;
     gap: 80px;
     margin: 40px auto;
-    max-width: 1200px;
+    max-width: 1400px;
     padding: 0 20px;
     flex-wrap: wrap;
 }
 
 .introducao-img {
-    width: 1200px;
+    width: 1400px;
+    max-height: 1400px;
     height: auto;
     border-radius: 8px;
     flex-shrink: 0;
+    flex: 2;
+    max-width: 1600px; 
+    width: 600px;          
+    height: auto;         
+    order: 2;              
+    border-radius: 8px;
 }
 
 .introducao-texto {
@@ -150,7 +157,7 @@ a {
 
 
 .card_title {
-    font-size: 2.5rem;
+    font-size: 3.5rem;
     font-family: 'Bebas Neue', Arial, sans-serif;
     color: rgb(72, 149, 212);
     text-decoration: underline;
@@ -158,19 +165,10 @@ a {
 }
 
 .card_text {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     color: rgb(0, 0, 0);
     line-height: 1.6;
-}
-
-.introducao-img {
-    flex: 2;
-    max-width: 1600px; 
-    width: 400px;          
-    height: auto;         
-    order: 2;              
-    border-radius: 8px;
 }
 
 @media (max-width: 768px) {
@@ -202,20 +200,24 @@ a {
     display: flex;
     flex-direction: row;
     align-items: center;
-    justify-content: space-between;    
-    gap: 80px;
+    justify-content: center;
+    gap: 60px;
     margin: 40px auto;
-    max-width: 1200px;
-    padding: 0 20px;
+    max-width: 1400px;
+    padding: 0 40px;
     flex-wrap: wrap;
 }
 
 .introducao-img1 {
-    width: 400px;
+    width: 600px;
     height: auto;
+    max-height: 1400px;
     border-radius: 8px;
     flex-shrink: 0;
+    height: auto;
     order: 1; 
+    border-radius: 8px;
+    flex-shrink: 0;
 }
 
 .introducao-texto1 {
@@ -224,15 +226,15 @@ a {
 }
 
 .card_title1 {
-    font-size: 2.5rem;
-    font-family: 'Roboto', sans-serif;
+    font-size: 3.5rem;
+    font-family: 'Bebas Neue', Arial, sans-serif;
     color: rgb(72, 149, 212);
     text-decoration: underline;
     margin-bottom: 20px;
 }
 
 .card_text1 {
-    font-size: 1.2rem;
+    font-size: 2rem;
     font-family: 'Roboto', sans-serif;
     color: rgb(0, 0, 0);
     line-height: 1.6;
@@ -269,7 +271,7 @@ a {
 .programs {
     margin-top: 60px;
     margin-bottom: 0;
-    background-color: #4e310afa;
+    background-color:  #3E2F1C;
     padding: 60px 20px;
     text-align: center;
 }
@@ -420,6 +422,7 @@ a {
 .exemples-title {
     height: 30px;
     font-size: 60px;
+    margin-top: 100px;
     font-weight: 500;
     font-family: 'Playfair_Display', Arial, sans-serif;
     color: rgb(72, 149, 212);
@@ -495,7 +498,7 @@ a {
     font-size: 60px;
     font-weight: 500;
     font-family: 'Playfair_Display', Arial, sans-serif;
-    color: rgb(0, 0, 0);
+    color: rgb(255, 255, 255);
     margin-top: 150px;
     margin-bottom: 50px;
     padding: 20px;
@@ -519,7 +522,7 @@ a {
 .card-list .card-item .card-link {
     user-select: none;
     display: block;
-    background: #f0ca75;
+    background: #3E2F1C;
     padding: 18px;
     border-radius: 12px;
     text-decoration: none;
@@ -533,7 +536,7 @@ a {
 }
 
 .card-list .card-item .card-link:hover {
-    border-color: #000000;
+    border-color: #F0D975;
 }
 
 
@@ -545,7 +548,7 @@ a {
 }
 
 .card-list .card-link .badge {
-    color: #000000;
+    color: #EEE0C9;
     padding: 8px 16px;
     font-size: 0.95rem;
     font-weight: 500;
@@ -555,57 +558,58 @@ a {
     background: #DDE4FF;
 }
 
-.card-list .card-link .badge.slider1{
-    color: #B22485;
-    background: #F7DFF5;
+
+.card-list .card-link .badge.slider1 {
+    background: #EDD9A3; 
+    color: #7A4E1E;
 }
 
-.card-list .card-link .badge.slider2{
-    color: #B25A2B;
-    background: #F7DFF5;
+.card-list .card-link .badge.slider2 {
+    background: #EBD8C3; 
+    color: #6E3B1F;
 }
 
-.card-list .card-link .badge.slider3{
-    color: #205c20; 
-    background: #F7DFF5;
+.card-list .card-link .badge.slider3 {
+    background: #DAD2C2; 
+    color: #4F3C1D;
 }
 
-.card-list .card-link .badge.slider4{
-    color: #856404;
-    background: #F7DFF5;
+.card-list .card-link .badge.slider4 {
+    background: #F4E4D3;
+    color: #3A2C17;
 }
 
 
 .card-list .card-link .card-title {
     font-size: 1.19rem;
-    color: #000000;
+    color: #FCE1B0;
     font-weight: 600;
 }
 
 .card-list .card-link .card-button {
     height: 35px;
     width: 35px;
-    color: #000000;
+    color: #B59B7A;
     border-radius: 50%;
     margin: 30px 0 5px;
     background: none;
     cursor: pointer;
-    border: 2px solid #000000;
+    border: 2px solid #F0D975;
     transform: rotate(-45deg);
     transition: 0.4s ease;
 }
 
 .card-list .card-link:hover .card-button {
-    color: #FFF;
-    background: #000000;
-
+    color: #3E2F1C;
+    background: #F0D975;
+    border-color: #3E2F1C;
 }
 
 .card-wrapper .swiper-pagination-bullet {
     height: 20px;
     width: 20px;
-    opacity: 0.5;
-    background: #000000;
+    opacity: 0.8;
+    background: #3E2F1C;
 }
 
 .card-wrapper .swiper-pagination-bullet-active {
@@ -628,7 +632,6 @@ a {
 }
 
 .role-profission {
-    margin-top: 60px;
     margin-bottom: 0;
     padding: 60px 20px;
     text-align: center;
@@ -638,21 +641,19 @@ a {
     font-size: 60px;
     font-weight: 500;
     font-family: 'Playfair_Display', Arial, sans-serif;
-    color: rgb(0, 0, 0);
-    margin-top: 150px;
-    margin-bottom: 50px;
+    color: rgb(255, 255, 255);
     padding: 20px;
+    margin-top: 200px;
     text-align: center; 
-    background-color: #f0ca75;
+    width: 100vw;
+    background-color: #683e22f1;
 }
-
 
 .role-titulo3 {
   font-size: 16px;
   color: #fff;
   margin: 0;
 }
-
 
 .role-titulo2 {
   font-size: 24px;
@@ -671,16 +672,15 @@ a {
     font-family: 'Oswald', sans-serif;
 }
 
-
 .profission {
     display: flex;
     margin-top: 40px;
-    gap: 80px;
+    gap: 40px;
     flex-wrap: wrap;
     align-items: stretch;
-    max-width: 900px; 
+    max-width: 1400px;    
     text-align: left;
-    margin-left: 300px;
+    margin-left: 250px;
     padding-left: 4px;
     justify-content: center;
     padding: 0 0px;
@@ -689,15 +689,14 @@ a {
 .card3 {
     display: flex;
     flex-direction: row;
-    background-color: #813b0cf1;
+    background-color: #683e22f1;
     border-radius: 12px;
     padding: 20px;
-    flex-basis: 100%;
-    max-width: 700px;
+    gap: 20px;
+    width: 650px; 
     height: auto;
     align-items: center;
-    gap: 20px;
-
+    flex-shrink: 0;
 }
 
 .card3 img {
@@ -759,7 +758,7 @@ a {
 /*----     Footer     ----*/
 
 footer {
-    background-color: #4e310afa;
+    background-color: #5A422A;
     width: 100%;
     padding: 30px 0;
     margin-top: auto; 
