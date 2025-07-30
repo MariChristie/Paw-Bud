@@ -120,15 +120,15 @@ a {
 }
 
 .top-title {
-    font-size: 4.5rem; /* Aumentei um pouco */
-    font-weight: 700; /* Mais peso */
+    font-size: 4.5rem; 
+    font-weight: 700; 
     font-family: 'Playfair Display', serif;
     color: var(--dark-color);
     margin: 0 0 1rem 0;
     position: relative;
     display: inline-block;
-    line-height: 1.1; /* Melhor espaçamento */
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); /* Sombra sutil */
+    line-height: 1.1; 
+    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.1); 
 }
 
 .top-title::after {
@@ -136,16 +136,15 @@ a {
     display: block;
     width: 60px;
     height: 4px;
-    background: var(--accent-color); /* Linha decorativa */
+    background: var(--accent-color); 
     margin: 1rem auto 0;
     transition: width 0.3s ease;
 }
 
 .top-title:hover::after {
-    width: 100px; /* Efeito hover na linha */
+    width: 100px; 
 }
 
-/* Efeito de destaque nas palavras */
 .top-title span {
     position: relative;
 }
@@ -166,7 +165,6 @@ a {
     width: 100%;
 }
 
-/* Responsividade */
 @media (max-width: 768px) {
     .top-title {
         font-size: 3rem;
