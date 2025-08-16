@@ -146,10 +146,29 @@
 
             <!-- Card 2: Similar breeds -->
             <div class="trainer-card similar-breeds">
-                <h3>Similar Breeds</h3>
-                <div class="similar-content">
-                    <p id="similar-breeds">German Shepherd, Rottweiler, Doberman</p>
+                <div class="breed-top">
+                    <h3>Similar Breeds</h3>
+                    <div class="breed-list" id="similar-breeds">
+                        
+                    <span>German Shepherd</span>
+                    <span>Rottweiler</span>
+                    <span>Doberman</span>
+                    </div>
+                </div>
+
+                <div class="breed-bottom">
+                    <div>
                     <small id="training-desc">Guard dogs are trained for protection and deterrence.</small>
+                    <button class="more-breeds" data-type="guard_dogs">See All Breeds</button>
+                    </div>
+                </div>
+            </div>
+
+            <div id="breedModal" class="modal">
+                <div class="modal-content">
+                    <span class="close-btn" id="closeModal">&times;</span>
+                    <h2>All Breeds</h2>
+                    <div class="breed-list-full"></div>
                 </div>
             </div>
 
@@ -161,8 +180,44 @@
         </div>
     </section>
 
+    <section class="puppies-highlight">
+        <div class="highlight-content">
+            <h2>Conheça Nossos Filhotes</h2>
+            <div class="highlight-decoration"></div>
+            <p>Selecionados com amor e cuidado, prontos para encontrar um novo lar. 
+            Cada filhote recebe a atenção e os cuidados que merece.</p>
+        </div>
+    </section>
 
+<section class="puppies-slider-section">
+  <div class="puppies-slider">
+    <div class="puppy-card">
+      <img src="/imagens/puppy.jpg" alt="Labrador Filhote">
+      <h3>Buddy</h3>
+      <span>Labrador Retriever</span>
+    </div>
 
+    <div class="puppy-card">
+      <img src="/imagens/puppy.jpg" alt="Golden Retriever Filhote">
+      <h3>Bella</h3>
+      <span>Golden Retriever</span>
+    </div>
+
+    <div class="puppy-card">
+      <img src="/imagens/puppy.jpg" alt="Pug Filhote">
+      <h3>Max</h3>
+      <span>Pug</span>
+    </div>
+  </div>
+
+  <!-- CTA integrado ao slider -->
+  <div class="puppies-cta">
+    <a href="/loja" class="cta-button">
+      Ver todos os filhotes <span>➜</span>
+    </a>
+    <small>Continue para nossa loja e conheça todos</small>
+  </div>
+</section>
 
 
 

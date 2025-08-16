@@ -1,0 +1,24 @@
+{
+  "guard_dogs": [
+    "German Shepherd",
+    "Rottweiler",
+    "Doberman",
+    "Belgian Malinois",
+    "Boxer",
+    "Great Dane",
+    "Bullmastiff",
+    "Akita"
+  ],
+  "farming_dogs": [
+    "Border Collie",
+    "Australian Shepherd",
+    "Corgi",
+    "Old English Sheepdog"
+  ],
+  "hunting_dogs": [
+    "Beagle",
+    "Pointer",
+    "Labrador Retriever",
+    "Weimaraner"
+  ]
+}

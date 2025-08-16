@@ -37,7 +37,15 @@ function updateCards(index) {
   document.getElementById("training-title").textContent = t.title;
   document.getElementById("training-img").src = t.mainImg;
   document.getElementById("training-img").alt = t.title;
-  document.getElementById("similar-breeds").textContent = t.breeds;
+
+  const breedList = document.getElementById("similar-breeds");
+  breedList.innerHTML = "";
+  t.breeds.split(",").forEach(breed => {
+    const span = document.createElement("span");
+    span.textContent = breed.trim();
+    breedList.appendChild(span);
+  });  
+
   document.getElementById("training-desc").textContent = t.desc;
   document.getElementById("iconic-img").src = t.iconic;
   document.getElementById("iconic-img").alt = t.title;
@@ -66,7 +74,7 @@ document.getElementById("prev-btn").addEventListener("click", () => {
 
 let autoPlayInterval = setInterval(() => {
   animateAndChange(currentIndex + 1);
-}, 5000); // troca a cada 5 segundos
+}, 5000); 
 
 function resetAutoPlay() {
   clearInterval(autoPlayInterval);
@@ -84,3 +92,27 @@ document.getElementById("prev-btn").addEventListener("click", () => {
   animateAndChange(currentIndex - 1);
   resetAutoPlay();
 });
+
+const modal = document.getElementById('breedModal');
+const closeModal = document.getElementById('closeModal');
+const breedListFull = document.querySelector('.breed-list-full');
+
+document.querySelectorAll('.more-breeds').forEach(btn => {
+  btn.addEventListener('click', () => {
+    const type = btn.dataset.type;
+
+    fetch('/js/breeds.json')
+      .then(res => res.json())
+      .then(data => {
+        const breedList = btn.closest('.trainer-card').querySelector('#similar-breeds');
+        breedList.innerHTML = ''; 
+        data[type].forEach(breed => {
+          const span = document.createElement('span');
+          span.textContent = breed;
+          breedList.appendChild(span);
+        });
+      })
+      .catch(err => console.error('Erro ao carregar raças:', err));
+  });
+});
+
