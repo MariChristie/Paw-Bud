@@ -116,3 +116,38 @@ document.querySelectorAll('.more-breeds').forEach(btn => {
   });
 });
 
+(function() {
+  const slider = document.querySelector(".puppies-slider");
+  const cards  = Array.from(document.querySelectorAll(".puppy-card"));
+  let current = 0;
+  let auto;
+
+  function goNext() {
+    current = (current + 1) % cards.length;
+    slider.scrollTo({
+      left: cards[current].offsetLeft - 16, 
+      behavior: 'smooth'
+    });
+  }
+
+  function startAuto() {
+    auto = setInterval(goNext, 4000);
+  }
+  function stopAuto(){
+    clearInterval(auto);
+  }
+
+  startAuto();
+
+  slider.addEventListener('touchstart', stopAuto);
+  slider.addEventListener('touchend',   startAuto);
+
+  slider.addEventListener('scroll', () => {
+    const scrollLeft = slider.scrollLeft + 20; 
+    cards.forEach((card, i) => {
+      if(card.offsetLeft <= scrollLeft) {
+        current = i;
+      }
+    });
+  });
+})();
