@@ -16,8 +16,9 @@ font-family: 'Poppins', sans-serif;
 
 html, body {
     max-width: 100%;
-    overflow-x: hidden !important;
+    overscroll-behavior: none;
 }
+
 
 :root {
     --main-color: #A78A7F;  
