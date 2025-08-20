@@ -14,7 +14,10 @@ font-family: 'Poppins', sans-serif;
   max-width: 100%;
 }
 
+
+
 html, body {
+    overflow-x: hidden;
     overscroll-behavior: none;
 }
 
@@ -396,12 +399,14 @@ a {
 }
 
 .image-big {
-    position: relative;
-    width: 350px; 
-    height: 350px; 
-    overflow: visible; 
-    transition: transform 0.4s ease, box-shadow 0.4s ease; 
+  position: relative; 
+  width: 350px; 
+  height: 350px; 
+  transition: transform 0.4s ease, box-shadow 0.4s ease; 
+  margin-right: -50px;
 }
+
+
 
 .image-big img {
     width: 100%;
@@ -1024,14 +1029,14 @@ a {
 .puppies-slider {
     display: flex;
     gap: 16px; 
-    overflow-x: auto;
-    scroll-snap-type: x mandatory;
     scroll-behavior: smooth;
     -webkit-overflow-scrolling: touch;
     padding-bottom: 8px;
     scrollbar-width: none;     
     -ms-overflow-style: none;   
     padding: 0 16px 12px;
+    flex-wrap: wrap;           
+    justify-content: center;    
 }
 
 .puppies-slider::-webkit-scrollbar {
@@ -1040,15 +1045,13 @@ a {
 
 
 .puppy-card {
-    flex: 0 0 auto;
-    min-width: 240px;
+    flex: 1 1 240px;
     background: #fff;
     border-radius: 12px;
     text-align: center;
     padding: 16px;
     box-shadow: 0 4px 16px rgba(0,0,0,0.06);
     transition: transform 0.3s ease;
-    scroll-snap-align: start;
 }
 
 .puppy-card:hover {
