@@ -1,3 +1,38 @@
+
+class MobileMenu {
+  constructor(mobileMenu, nav, body) {
+    this.mobileMenu = document.querySelector(mobileMenu);
+    this.nav = document.querySelector(nav);
+    this.body = document.querySelector(body);
+    this.activeClass = "active";
+  }
+
+  handleClick() {
+    this.nav.classList.toggle(this.activeClass);
+    this.mobileMenu.classList.toggle(this.activeClass);
+    this.body.classList.toggle("no-scroll");
+  }
+
+  addClickEvent() {
+    this.mobileMenu.addEventListener("click", () => this.handleClick());
+  }
+
+  init() {
+    if (this.mobileMenu) {
+      this.addClickEvent();
+    }
+    return this;
+  }
+}
+
+const mobileMenu = new MobileMenu(
+  ".mobile-menu",
+  ".dog-lounge-left nav",
+  "body"
+);
+mobileMenu.init();
+
+
 const trainings = [
   {
     title: "Guard Training",

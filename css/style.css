@@ -243,8 +243,9 @@ a {
 }
 
 .dog-lounge-left .logo img { 
-    width: 40px; 
-    height: 40px; }
+    width: 35px;
+    height: 35px;
+  }
 
 .dog-lounge-left .logo { 
     margin: 0; 
@@ -271,8 +272,9 @@ a {
     letter-spacing: 0.5px;   
 }
 
-.dog-lounge-left nav a:hover { 
-    color: var(--accent-color); 
+.dog-lounge-left nav a:hover {
+  background-color: rgba(255, 255, 255, 0.2);
+  border-bottom: none;
 }
 
 .dog-lounge-left .call h1 {
@@ -317,73 +319,141 @@ a {
 }
 
 @media (max-width: 600px) {
+   .dog-lounge-left, .dog-lounge-right {
+    display: none;
+  }
   .dog-lounge {
-    flex-direction: column;
-    min-height: auto;
-  }
-
-.dog-lounge-left nav a {
-    font-size: 1.5rem;              
-    padding: 10px 0;                 
-  }
-
-  .dog-lounge::before {
-    left: 0;
-    width: 100%;
-    opacity: 0.15;
-  }
-
-  .dog-lounge-left {
-    clip-path: none;
-    width: 100%;
-    padding: 28px 20px;
+    display: flex;
+    justify-content: space-between; 
     align-items: center;
-    text-align: center;
+    padding: 1rem 1.5rem;
+    background: var(--dark-color);
+    min-height: auto;
+    position: relative;
+    z-index: 100;
+  }
+  .logo, .mobile-menu {
+    display: block;
+  }
+
+  .logo {
+    font-size: 1.6rem;
+    margin: 0;
+  }
+  .logo img {
+    width: 30px;
+    height: 30px;
+  }
+  
+  .dog-lounge::before {
+    display: none; 
+  }
+  .dog-lounge-left {
+    width: 100%;
+    background: var(--dark-color);
+    clip-path: none;
+    padding: 0;
+    display: block; 
   }
 
   .nav-background {
     width: 100%;
+    background: var(--dark-color);
+    padding: 1rem 1.5rem;
+    display: flex;
+    justify-content: space-between; 
+    align-items: center;
     clip-path: none;
-    margin: 0 0 20px 0;
-    padding: 20px;
-    align-items: center;
-  }
-
-  .dog-lounge-left nav ul {
-    flex-direction: column;
-    gap: 12px;
-    align-items: center;
+    margin: 0;
   }
 
   .dog-lounge-left .logo {
-    font-size: 2rem;
-    margin-bottom: 8px;
+    font-size: 1.6rem;
+    margin: 0;
+    position: relative;
+    z-index: 101; 
+  }
+  .dog-lounge-left .logo img {
+    width: 30px;
+    height: 30px;
   }
 
-  .dog-lounge-left nav a {
-    font-size: 1rem;
+  .dog-lounge-left .call {
+    padding: 4rem 1.5rem;
+    text-align: center;
+    background: var(--dark-color);
   }
-
   .dog-lounge-left .call h1 {
-    font-size: 1.7rem;
-    line-height: 1.3;
+    font-size: clamp(2rem, 8vw, 2.5rem);
+    color: white;
   }
-
   .dog-lounge-left .call p {
-    font-size: 1rem;
-    line-height: 1.4;
-    max-width: 100%;
-  }
-
-  .dog-lounge-left .cta {
-    margin-top: 16px;
-    padding: 12px 24px;
-    font-size: 0.95rem;
+    color: var(--accent-color);
   }
 
   .dog-lounge-right {
     display: none;
   }
+
+  .mobile-menu {
+    display: block;
+    cursor: pointer;
+    z-index: 101; 
+  }
+  .mobile-menu div {
+    width: 30px;
+    height: 2px;
+    background: #fff;
+    margin: 6px 0;
+    transition: 0.4s;
+  }
+
+  .dog-lounge-left nav {
+    position: fixed;
+    top: 0;
+    right: 0;
+    width: 80vw;
+    height: 100vh;
+    background: #1c1612; 
+    box-shadow: -5px 0 20px rgba(0,0,0,0.5);
+    transform: translateX(100%);
+    transition: transform 0.3s ease-in-out;
+    z-index: 100; 
+    padding: 0; 
+  }
+
+  .dog-lounge-left nav.active {
+    transform: translateX(0);
+  }
+  
+  .dog-lounge-left nav ul {
+    height: 100%;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    gap: 2rem;
+  }
+  
+  .dog-lounge-left nav a {
+    font-size: 1.5rem;
+    font-weight: 500;
+  }
+  
+
+  .mobile-menu.active .line1 {
+    transform: rotate(-45deg) translate(-6px, 6px);
+  }
+  .mobile-menu.active .line2 {
+    opacity: 0;
+  }
+  .mobile-menu.active .line3 {
+    transform: rotate(45deg) translate(-7px, -7px);
+  }
+}
+
+.no-scroll {
+  overflow: hidden;
 }
 
 /* Style about us section */
