@@ -1,20 +1,21 @@
-
 class MobileMenu {
-  constructor(mobileMenu, nav, body) {
+  constructor(mobileMenu, navList, body) {
     this.mobileMenu = document.querySelector(mobileMenu);
-    this.nav = document.querySelector(nav);
+    this.navList = document.querySelector(navList);
     this.body = document.querySelector(body);
     this.activeClass = "active";
   }
 
   handleClick() {
-    this.nav.classList.toggle(this.activeClass);
+    this.navList.classList.toggle(this.activeClass);
     this.mobileMenu.classList.toggle(this.activeClass);
     this.body.classList.toggle("no-scroll");
   }
 
   addClickEvent() {
-    this.mobileMenu.addEventListener("click", () => this.handleClick());
+    if (this.mobileMenu) {
+      this.mobileMenu.addEventListener("click", () => this.handleClick());
+    }
   }
 
   init() {
@@ -27,11 +28,10 @@ class MobileMenu {
 
 const mobileMenu = new MobileMenu(
   ".mobile-menu",
-  ".dog-lounge-left nav",
+  ".dog-lounge-left nav ul", 
   "body"
 );
 mobileMenu.init();
-
 
 const trainings = [
   {
